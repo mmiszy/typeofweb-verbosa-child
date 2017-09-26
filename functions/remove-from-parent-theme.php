@@ -35,6 +35,19 @@ function typeofweb_remove_parent_stuff() {
     typeofweb_remove_parent_theme_header_image();
     typeofweb_remove_parent_theme_fonts();
     typeofweb_remove_parent_theme_featured_images();
+    typeofweb_remove_parent_theme_responsive_meta();
+}
+
+function typeofweb_remove_parent_theme_responsive_meta() {
+    $removed = remove_action('cryout_meta_hook', 'verbosa_responsive_meta');
+    
+    if ($removed) {
+        add_action('cryout_meta_hook', 'typeofweb_responsive_meta');
+    }
+}
+
+function typeofweb_responsive_meta() {
+	echo '<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, viewport-fit=cover">' . PHP_EOL;	
 }
 
 function typeofweb_master_footer() {

@@ -13,6 +13,7 @@ require_once(__DIR__ . '/functions/add-facebook-page-shortcode.php');
 require_once(__DIR__ . '/functions/add-mailchimp-widget.php');
 require_once(__DIR__ . '/functions/add-verification-meta.php');
 require_once(__DIR__ . '/functions/remove-from-parent-theme.php');
+require_once(__DIR__ . '/functions/add-breadcrumbs.php');
 
 
 function async_scripts() {
