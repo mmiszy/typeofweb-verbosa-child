@@ -50,8 +50,10 @@ body {
 }
 
 #sidebar {
-    padding-left: calc(3em + constant(safe-area-inset-left));
-    padding-right: calc(3em + constant(safe-area-inset-right));
+    padding-left: 2.3em;
+    padding-right: 2.2em;
+    padding-left: calc(2.3em + constant(safe-area-inset-left));
+    padding-right: calc(2.2em + constant(safe-area-inset-right));
 }
 
 #mobile-menu {
@@ -107,7 +109,15 @@ pre code, pre tt {
     padding: 0;
 }
 
-.main p a {
+pre.line-numbers .line-numbers-rows {
+    top: -1px;
+}
+
+pre.line-numbers code {
+    vertical-align: baseline;
+}
+
+.main p a, .main ul a {
     text-decoration: underline;
 }
 
@@ -118,7 +128,7 @@ pre code, pre tt {
 .dsq-widget-list img.dsq-widget-avatar {
 	padding: 0 !important;
     margin: 6px 6px 3px 0 !important;
-    margin-left: -38px !important;
+    margin-left: -36px !important;
     position: absolute !important;
 }
 
@@ -487,6 +497,10 @@ code[class*="language-"], pre[class*="language-"] {
     margin-bottom: 0;
 }
 
+#breadcrumbs a, #breadcrumbs span, #breadcrumbs strong {
+	font-size: 11px;
+}
+
 #breadcrumbs a {
     text-decoration: none;
 }
@@ -495,3 +509,67 @@ code[class*="language-"], pre[class*="language-"] {
     margin: 0;
     padding: 0;
 }
+
+
+table.job-offer {
+    width: 114%;
+    max-width: 114%;
+    margin-left: -7%;
+}
+
+.job-offer a {
+    text-decoration: underline;
+}
+
+.job-offer img {
+    width: 45px;
+    min-width: 45px;
+}
+
+.job-offer td:first-child {
+    padding-left: 0;
+}
+
+.job-offer td:last-child {
+    padding-right: 0;
+}
+
+.job-offer tr, .job-offer img {
+    vertical-align: middle;
+}
+
+.job-offer h2, .job-offer h3, .job-offer time, .job-offer span, .job-offer td {
+    font-size: 16px;
+    margin: 0;
+}
+
+.job-offer td[itemprop=skills] {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .job-offer td[itemprop=skills] {
+        display: table-cell;
+    }
+
+    .job-offer td[itemprop=skills] span {
+        text-transform: uppercase;
+        border: 1px solid currentColor;
+        border-radius: 2px;
+        display: inline-block;
+        padding: 0 4px;
+        white-space: nowrap;
+        margin: 2px 0;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .job-offer td[itemprop=skills] span:not(:last-child) {
+        margin-right: 4px;
+    }
+}
+
+.page .entry-header {
+    margin-bottom: 1em;
+}
+

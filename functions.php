@@ -1,5 +1,6 @@
 <?php
 
+require_once(__DIR__ . '/functions/security.php');
 require_once(__DIR__ . '/functions/add-service-worker.php');
 require_once(__DIR__ . '/functions/language.php');
 require_once(__DIR__ . '/functions/optimize-scripts.php');
@@ -10,6 +11,7 @@ require_once(__DIR__ . '/functions/add-share-buttons.php');
 require_once(__DIR__ . '/functions/add-social.php');
 // require_once(__DIR__ . '/functions/add-google-fonts.php');
 require_once(__DIR__ . '/functions/add-facebook-page-shortcode.php');
+require_once(__DIR__ . '/functions/add-jobs-shortcode.php');
 require_once(__DIR__ . '/functions/add-mailchimp-widget.php');
 require_once(__DIR__ . '/functions/add-verification-meta.php');
 require_once(__DIR__ . '/functions/remove-from-parent-theme.php');
