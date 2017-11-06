@@ -13,13 +13,13 @@ function modify_archive_title( $title ) {
 }
 add_filter( 'get_the_archive_title', 'modify_archive_title', 10, 1 );
 
-function modify_series_title($title) {
-    if (is_tax('series')) {
+function modify_series_title($title, $category) {
+    if ($category->taxonomy === 'series') {
         return add_to_series_title($title);
     }
     return $title;
 }
-add_filter('list_cats', 'modify_series_title', 10, 1);
+add_filter('list_cats', 'modify_series_title', 10, 2);
 
 add_action('template_redirect', function () {
     global $orgseries;
