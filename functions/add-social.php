@@ -25,11 +25,11 @@ function typeofweb_add_social() {
 </script>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <script async src="https://codepen.io/eijs.js"></script>
-<script>
+<script defer>
 setTimeout(function () {
     window[window.GoogleAnalyticsObject] && window[window.GoogleAnalyticsObject]('send','event','Profitable Engagement 10s','time on page more than 10 seconds')
 }, 10000);
 </script>
     <?php
 }
-add_action( 'wp_footer', 'typeofweb_add_social' );
+add_action('wp_footer', 'typeofweb_add_social');

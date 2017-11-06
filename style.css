@@ -528,6 +528,7 @@ table.job-offer {
 
 .job-offer td:first-child {
     padding-left: 0;
+    position: relative;
 }
 
 .job-offer td:last-child {
@@ -543,8 +544,22 @@ table.job-offer {
     margin: 0;
 }
 
+.job-offer h2, .job-offer h3 {
+    display: inline;
+}
+
 .job-offer td[itemprop=skills] {
     display: none;
+}
+
+.job-offer td .lazy:not(.lazy-loaded) ~ .image-placeholder {
+    background: url(https://disqus.com/api/forums/avatars/typeofweb.jpg?size=92) no-repeat center center / contain;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 @media (min-width: 640px) {

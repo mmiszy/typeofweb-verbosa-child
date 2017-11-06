@@ -91,7 +91,7 @@ function typeofweb_generate_jobs_html($jobs) {
         <meta itemprop="jobLocation" content="Remote" />
         <meta itemprop="remote-friendly" content="True" />
         <meta itemprop="remote" content="True" />
-        <img src="' . esc_attr($job->image) . '" itemprop="image">
+        <img src="' . esc_attr($job->image) . '" itemprop="image"><span class="image-placeholder"></span>
         </td>';
         $return .= '<td><a href="' . esc_attr($job->permalink) . '" itemprop="url" target="_blank" rel="noopener nofollow"><h2 itemprop="title">' . wp_strip_all_tags($job->title) . '</h2></a></td>';
         $return .= '<td><h3 itemprop="hiringOrganization"><span itemprop="name">' . wp_strip_all_tags($job->company) . '</span></h3></td>';
