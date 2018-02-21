@@ -121,6 +121,74 @@ pre.line-numbers code {
     text-decoration: underline;
 }
 
+.reading-progress-indicator {
+    /* Positioning */
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    /* Dimensions */
+    width: 100%;
+    height: 5px;
+    
+    /* Reset the appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    /* Get rid of the default border in Firefox/Opera. */
+    border: none;
+    
+    /* Progress bar container for Firefox/IE10+ */
+    background-color: transparent;
+    
+    /* Progress bar value for IE10+ */
+    color: #00f9bd;
+    z-index: 100;
+}
+
+.reading-progress-indicator {
+    top: 45px;
+}
+
+@media screen and (min-width: 640px) {
+    .reading-progress-indicator {
+        top: 55px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .admin-bar .reading-progress-indicator {
+        top: 32px;
+    }
+
+    .reading-progress-indicator {
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    #colophon .widget_seriestoc {
+        display: none;
+    }
+
+    .footer-three .widget-container:nth-child(3n+1) {
+        clear: none;
+    }
+}
+
+.reading-progress-indicator::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+.reading-progress-indicator::-webkit-progress-value {
+    background-color: #00f9bd;
+}
+
+.reading-progress-indicator::-moz-progress-bar {
+    background-color: #00f9bd;
+}
+
 
 /*disqus*/
 /* the entire list */
@@ -166,7 +234,9 @@ pre.line-numbers code {
 /* the comment */
 
 .dsq-widget-comment {
-	display: inline;
+    display: inline;
+    word-break: break-word;
+    word-wrap: break-word;
 }
 
 /* paragraph that contains the link to the post and day */
@@ -446,7 +516,7 @@ body:not(.home) .content-widget-before {
     font-family: Ubuntu, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-code[class*="language-"], pre[class*="language-"] {
+code, pre[class*="language-"] {
     font-family: 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
 }
 
@@ -588,3 +658,76 @@ table.job-offer {
     margin-bottom: 1em;
 }
 
+.serieslist-li:nth-child(-n+9) {
+    text-indent: 1ex;
+}
+
+
+
+
+
+
+
+/* header */
+#upprev_box h6 a { }
+/* header link: mouse over */
+#upprev_box h6 a:hover { }
+/* headera link: visited */
+#upprev_box h6 a:visited { }
+/* container for title, thumbnail and excerpt */
+#upprev_box .upprev_excerpt { }
+/* excerpt */
+#upprev_box .upprev_excerpt p { }
+/* previous post link */
+#upprev_box .upprev_excerpt p a { }
+/* previous post link: mouse over */
+#upprev_box .upprev_excerpt p a:hover { }
+/* previous post link: visited */
+#upprev_box .upprev_excerpt p a:visited { }
+/* thumbnail image */
+#upprev_box .upprev_thumb { }
+
+#upprev_box #upprev_close {
+    background: transparent;
+    overflow: visible;
+    text-indent: 0;
+    font-size: 0;
+}
+/* close button */
+#upprev_box #upprev_close::before {
+    content: "\e962";
+    font-family: icomoon !important;
+    font-size: 12px;
+    display: inline-block;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: inherit;
+    cursor: inherit;
+    width: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#upprev_box a.upprev_thumbnail img {
+    border: 0;
+    float: left;
+    margin: 5px 10px 0px 0;
+}
+
+#upprev_box {
+    border-top: 3px solid #00f9bd !important;
+    transition: 1s border-top ease;
+}
+
+#upprev_box:hover {
+    border-top-color: #1f133a !important;
+}
+
+@media screen and (max-width: 400px) {
+    #upprev_box {
+        display: none;
+    }
+}

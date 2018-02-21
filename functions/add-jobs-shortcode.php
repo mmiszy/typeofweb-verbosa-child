@@ -108,7 +108,7 @@ function typeofweb_generate_jobs_html($jobs) {
 }
 
 function typeofweb_weworkremotely_jobs() {
-    $rss = fetch_feed('https://weworkremotely.com/categories/2-programming/jobs.rss');
+    $rss = fetch_feed('https://weworkremotely.com/categories/remote-programming-jobs.rss');
 
     if (is_wp_error($rss)) {
         return [];
@@ -195,7 +195,7 @@ function typeofweb_remoteok_jobs() {
 function typeofweb_add_jobs_shortcode( $atts ) {
 	$atts = shortcode_atts(array(), $atts, 'typeofweb-jobs');
 
-    $remoteok = typeofweb_remoteok_jobs();
+    $remoteok = array();//typeofweb_remoteok_jobs();
     $weworkremotely = typeofweb_weworkremotely_jobs();
 
     $all_jobs = array_unique_jobs(array_merge($remoteok, $weworkremotely));

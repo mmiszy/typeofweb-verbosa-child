@@ -16,6 +16,7 @@ function typeofweb_enqueue_styles() {
 
     wp_enqueue_script( 'share-buttons', get_stylesheet_directory_uri() . '/share-buttons.js' , array('jquery'), null, true );
     wp_enqueue_script( 'fix-mobile-menu', get_stylesheet_directory_uri() . '/fix-mobile-menu.js' , array('jquery'), null, true );
+    wp_enqueue_script( 'add-reading-progress', get_stylesheet_directory_uri() . '/add-reading-progress.js' , array('jquery'), null, true );
 
     // wp_enqueue_script( 'track-outbound-links', get_stylesheet_directory_uri() . '/track-outbound-links.js' , array('jquery'), null, true );
 }
