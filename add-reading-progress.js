@@ -41,7 +41,10 @@ jQuery(function ($) {
             _disqus_config.call(this);
         }
         this.callbacks.onReady.push(updateAllThrottled);
-    }
+    };
 
-    $document.on('scroll', updateValue);
+    document.addEventListener('scroll', updateValue, {
+        capture: true,
+        passive: true
+    });
 });
