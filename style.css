@@ -172,10 +172,41 @@ pre.line-numbers code {
         display: none;
     }
 
+    #colophon-inside {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+
+    #colophon .widget-container {
+        float: none;
+    }
+
     .footer-three .widget-container:nth-child(3n+1) {
         clear: none;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .main .alignright, .main img.alignright,
+    .main .alignleft, .main img.alignleft {
+        max-width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main .alignright, .main img.alignright,
+    .main .alignleft, .main img.alignleft {
+        clear: both;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
 
 .reading-progress-indicator::-webkit-progress-bar {
     background-color: transparent;
@@ -224,6 +255,7 @@ pre.line-numbers code {
 /* the Disqus user name */
 
 .dsq-widget-user {
+    font-weight: 800;
 	display: inline !important;
 }
 
@@ -242,6 +274,7 @@ pre.line-numbers code {
 /* paragraph that contains the link to the post and day */
 
 .dsq-widget-meta {
+    font-size: 0.8em;
 	display: block;
 }
 
@@ -692,12 +725,14 @@ table.job-offer {
     overflow: visible;
     text-indent: 0;
     font-size: 0;
+    width: 30px;
+    height: 30px;
 }
 /* close button */
 #upprev_box #upprev_close::before {
     content: "\e962";
     font-family: icomoon !important;
-    font-size: 12px;
+    font-size: 22px;
     display: inline-block;
     speak: none;
     font-style: normal;
@@ -731,3 +766,18 @@ table.job-offer {
         display: none;
     }
 }
+/* 
+::-webkit-scrollbar{
+    height: 9px;
+    width: 10px;
+    border-radius: 8px;
+    background: transparent;
+    transition: all 0.3s;
+}
+::-webkit-scrollbar:hover{
+    background: #eee;
+}
+::-webkit-scrollbar-thumb{
+    background:#00f9bd;
+    border-radius: 8px;
+} */

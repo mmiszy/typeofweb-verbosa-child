@@ -1,0 +1,199 @@
+# stare tagi
+Redirect 301 /tag/kurs-hapijs https://typeofweb.com/kurs/hapijs/
+Redirect 301 /tag/kurs-typescript https://typeofweb.com/kurs/typescript/
+Redirect 301 /tag/angular-2 https://typeofweb.com/kurs/angular-2/
+Redirect 301 /tag/javascript/ https://typeofweb.com/javascript/
+Redirect 301 /tag/node-js/ https://typeofweb.com/node-js/
+Redirect 301 /tag/dobry-kod/ https://typeofweb.com/dobry-kod/
+Redirect 301 /tag/praca-zdalna/ https://typeofweb.com/praca-zdalna/
+Redirect 301 /tag/bezpieczenstwo/ https://typeofweb.com/tag/hacking/
+Redirect 301 /category/wpis/ https://typeofweb.com/
+Redirect 301 /tag/dobry-kod https://typeofweb.com/dobry-kod/
+
+Redirect 301 /tag/angularjs/page/2/ https://typeofweb.com/tag/angularjs/
+Redirect 301 /tag/typescript/page/2/ https://typeofweb.com/tag/typescript/
+Redirect 301 /wpis/page/4/ https://typeofweb.com/
+Redirect 301 /wpis/page/2/ https://typeofweb.com/
+Redirect 301 /wpis/page/3/ https://typeofweb.com/
+Redirect 301 /match https://typeofweb.com/
+
+# stare adresy
+Redirect 301 /2016/04/03/welcome-to-ghost/ https://typeofweb.com/
+Redirect 301 /2017/05/20/observable-rxjs/ https://typeofweb.com/2017/05/19/observable-rxjs/
+Redirect 301 /2016/04/05/typescript-na-serwerze/ https://typeofweb.com/2016/04/06/typescript-na-serwerze/
+Redirect 301 /2017/01/27/tworzenie-rest-api-w-node-js-z-wykorzystaniem-frameworka-hapijs-czesc-2/ https://typeofweb.com/2017/01/28/tworzenie-rest-api-w-node-js-z-wykorzystaniem-frameworka-hapijs-czesc-2/
+Redirect 301 /2016/04/18/angularjs-i-seo/ https://typeofweb.com/2016/04/19/angularjs-i-seo/
+Redirect 301 /2016/04/11/asi-czyli-automatyczne-wstawianie-srednikow/ https://typeofweb.com/2016/04/12/asi-czyli-automatyczne-wstawianie-srednikow/
+Redirect 301 /2018/01/29/react-js-na-github-pages-dzieki-create-react-app/ https://typeofweb.com/2018/01/31/react-js-na-github-pages-dzieki-create-react-app/
+Redirect 301 /2018/03/06/formularze-react-js-niekontrolowane-komponenty/ https://typeofweb.com/2018/03/06/formularze-react-js-kontrolowane-komponenty/
+Redirect 301 /2018/01/09/react-js-w-przykladach-filtrowanie-statycznej-listy https://typeofweb.com/2018/01/24/react-js-w-przykladach-filtrowanie-statycznej-listy/
+Redirect 301 /o-mnie/facebook.com/meetjspl https://typeofweb.com/o-mnie/
+Redirect 301 /autor/michal https://typeofweb.com/autor/michal-miszczyszyn/
+Redirect 301 /2016/06/10/flux-i-redux/ https://typeofweb.com/2018/03/29/flux-i-redux/
+
+# /header
+Redirect 301 /2018/01/15/state-react-js-2/header https://typeofweb.com/2018/01/15/state-react-js-2/
+Redirect 301 /2018/01/28/nowa-inicjatywa-recenzje-portali-praca-zdalna/header https://typeofweb.com/2018/01/28/nowa-inicjatywa-recenzje-portali-praca-zdalna/
+Redirect 301 /2018/01/11/state-react-js/header https://typeofweb.com/2018/01/11/state-react-js/
+Redirect 301 /2018/01/29/tworzenie-aplikacji-react-js-dzieki-create-react-app/header https://typeofweb.com/2018/01/29/tworzenie-aplikacji-react-js-dzieki-create-react-app/
+Redirect 301 /2018/01/13/podsumowanie-roku-2017-plany-2018/header https://typeofweb.com/2018/01/13/podsumowanie-roku-2017-plany-2018/
+Redirect 301 /2018/01/18/metody-cyklu-zycia-komponentu-react-js/header https://typeofweb.com/2018/01/18/metody-cyklu-zycia-komponentu-react-js/
+Redirect 301 /2018/01/22/odmiana-rzeczownikow-przy-liczebnikach-jezyku-polskim/header https://typeofweb.com/2018/01/22/odmiana-rzeczownikow-przy-liczebnikach-jezyku-polskim/
+Redirect 301 /2018/01/24/react-js-w-przykladach-filtrowanie-statycznej-listy/header https://typeofweb.com/2018/01/24/react-js-w-przykladach-filtrowanie-statycznej-listy/
+Redirect 301 /2018/02/09/testowanie-aplikacji-react-js-podstawy-enzyme/header https://typeofweb.com/2018/02/09/testowanie-aplikacji-react-js-podstawy-enzyme/
+Redirect 301 /2018/01/31/react-js-na-github-pages-dzieki-create-react-app/header https://typeofweb.com/2018/01/31/react-js-na-github-pages-dzieki-create-react-app/
+
+# sitemapy
+Redirect 301 /sitemap-authors.xml https://typeofweb.com/author-sitemap.xml
+Redirect 301 /sitemap-posts.xml https://typeofweb.com/post-sitemap.xml
+Redirect 301 /sitemap-pages.xml https://typeofweb.com/page-sitemap.xml
+
+Options -Indexes
+AddType application/x-httpd-php71 .php
+# AddType application/x-httpd-php70 .php
+
+
+
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault "access plus 1 month"
+	ExpiresByType text/html "access plus 1 seconds"
+	ExpiresByType image/gif "access plus 30 days"
+	ExpiresByType image/jpeg "access plus 30 days"
+	ExpiresByType image/png "access plus 30 days"
+	ExpiresByType image/jpg "access plus 30 days"
+	ExpiresByType image/svg+xml "access plus 30 days"
+	ExpiresByType font/woff2 "access plus 30 days"
+	ExpiresByType application/x-font-woff "access plus 30 days"
+	ExpiresByType text/css "access plus 30 days"
+	ExpiresByType text/javascript "access plus 30 days"
+	ExpiresByType application/javascript "access plus 30 days"
+	ExpiresByType application/x-javascript "access plus 30 days"
+	ExpiresByType text/xml "access plus 60 minutes"
+</IfModule>
+
+# Block the include-only files.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^author/typeofweb/ https://typeofweb.com/autor/michal-miszczyszyn/ [R=301,L]
+RewriteRule ^author/michal/ https://typeofweb.com/autor/michal-miszczyszyn/ [R=301,L]
+RewriteRule ^author/(.*) https://typeofweb.com/autor/$1 [R=301,L]
+
+RewriteRule ^wp-admin/includes/ - [F,L]
+RewriteRule !^wp-includes/ - [S=3]
+RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
+RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
+RewriteRule ^wp-includes/theme-compat/ - [F,L]
+</IfModule>
+
+
+<IfModule mod_rewrite.c>
+RewriteCond %{QUERY_STRING} author=\d
+RewriteRule ^ /? [L,R=301]
+</IfModule>
+
+
+<FilesMatch "wp-config.*\.php|\.htaccess|readme\.html">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# BEGIN WPSuperCache
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+#If you serve pages from behind a proxy you may want to change 'RewriteCond %{HTTPS} on' to something more sensible
+AddDefaultCharset UTF-8
+RewriteCond %{REQUEST_URI} !^.*[^/]$
+RewriteCond %{REQUEST_URI} !^.*//.*$
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author_|wordpress_logged_in|wp-postpass_).*$
+RewriteCond %{HTTP:X-Wap-Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*(2.0\ MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800).* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^(w3c\ |w3c-|acs-|alav|alca|amoi|audi|avan|benq|bird|blac|blaz|brew|cell|cldc|cmd-|dang|doco|eric|hipt|htc_|inno|ipaq|ipod|jigs|kddi|keji|leno|lg-c|lg-d|lg-g|lge-|lg/u|maui|maxo|midp|mits|mmef|mobi|mot-|moto|mwbp|nec-|newt|noki|palm|pana|pant|phil|play|port|prox|qwap|sage|sams|sany|sch-|sec-|send|seri|sgh-|shar|sie-|siem|smal|smar|sony|sph-|symb|t-mo|teli|tim-|tosh|tsm-|upg1|upsi|vk-v|voda|wap-|wapa|wapi|wapp|wapr|webc|winw|winw|xda\ |xda-).* [NC]
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{HTTPS} on
+RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{SERVER_NAME}/$1/index-https.html.gz -f
+RewriteRule ^(.*) "/wp-content/cache/supercache/%{SERVER_NAME}/$1/index-https.html.gz" [L]
+
+RewriteCond %{REQUEST_URI} !^.*[^/]$
+RewriteCond %{REQUEST_URI} !^.*//.*$
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author_|wordpress_logged_in|wp-postpass_).*$
+RewriteCond %{HTTP:X-Wap-Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*(2.0\ MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800).* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^(w3c\ |w3c-|acs-|alav|alca|amoi|audi|avan|benq|bird|blac|blaz|brew|cell|cldc|cmd-|dang|doco|eric|hipt|htc_|inno|ipaq|ipod|jigs|kddi|keji|leno|lg-c|lg-d|lg-g|lge-|lg/u|maui|maxo|midp|mits|mmef|mobi|mot-|moto|mwbp|nec-|newt|noki|palm|pana|pant|phil|play|port|prox|qwap|sage|sams|sany|sch-|sec-|send|seri|sgh-|shar|sie-|siem|smal|smar|sony|sph-|symb|t-mo|teli|tim-|tosh|tsm-|upg1|upsi|vk-v|voda|wap-|wapa|wapi|wapp|wapr|webc|winw|winw|xda\ |xda-).* [NC]
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{HTTPS} !on
+RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{SERVER_NAME}/$1/index.html.gz -f
+RewriteRule ^(.*) "/wp-content/cache/supercache/%{SERVER_NAME}/$1/index.html.gz" [L]
+
+RewriteCond %{REQUEST_URI} !^.*[^/]$
+RewriteCond %{REQUEST_URI} !^.*//.*$
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author_|wordpress_logged_in|wp-postpass_).*$
+RewriteCond %{HTTP:X-Wap-Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*(2.0\ MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800).* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^(w3c\ |w3c-|acs-|alav|alca|amoi|audi|avan|benq|bird|blac|blaz|brew|cell|cldc|cmd-|dang|doco|eric|hipt|htc_|inno|ipaq|ipod|jigs|kddi|keji|leno|lg-c|lg-d|lg-g|lge-|lg/u|maui|maxo|midp|mits|mmef|mobi|mot-|moto|mwbp|nec-|newt|noki|palm|pana|pant|phil|play|port|prox|qwap|sage|sams|sany|sch-|sec-|send|seri|sgh-|shar|sie-|siem|smal|smar|sony|sph-|symb|t-mo|teli|tim-|tosh|tsm-|upg1|upsi|vk-v|voda|wap-|wapa|wapi|wapp|wapr|webc|winw|winw|xda\ |xda-).* [NC]
+RewriteCond %{HTTPS} on
+RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{SERVER_NAME}/$1/index-https.html -f
+RewriteRule ^(.*) "/wp-content/cache/supercache/%{SERVER_NAME}/$1/index-https.html" [L]
+
+RewriteCond %{REQUEST_URI} !^.*[^/]$
+RewriteCond %{REQUEST_URI} !^.*//.*$
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{QUERY_STRING} !.*=.*
+RewriteCond %{HTTP:Cookie} !^.*(comment_author_|wordpress_logged_in|wp-postpass_).*$
+RewriteCond %{HTTP:X-Wap-Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{HTTP_USER_AGENT} !^.*(2.0\ MMP|240x320|400X240|AvantGo|BlackBerry|Blazer|Cellphone|Danger|DoCoMo|Elaine/3.0|EudoraWeb|Googlebot-Mobile|hiptop|IEMobile|KYOCERA/WX310K|LG/U990|MIDP-2.|MMEF20|MOT-V|NetFront|Newt|Nintendo\ Wii|Nitro|Nokia|Opera\ Mini|Palm|PlayStation\ Portable|portalmmm|Proxinet|ProxiNet|SHARP-TQ-GX10|SHG-i900|Small|SonyEricsson|Symbian\ OS|SymbianOS|TS21i-10|UP.Browser|UP.Link|webOS|Windows\ CE|WinWAP|YahooSeeker/M1A1-R2D2|iPhone|iPod|Android|BlackBerry9530|LG-TU915\ Obigo|LGE\ VX|webOS|Nokia5800).* [NC]
+RewriteCond %{HTTP_USER_AGENT} !^(w3c\ |w3c-|acs-|alav|alca|amoi|audi|avan|benq|bird|blac|blaz|brew|cell|cldc|cmd-|dang|doco|eric|hipt|htc_|inno|ipaq|ipod|jigs|kddi|keji|leno|lg-c|lg-d|lg-g|lge-|lg/u|maui|maxo|midp|mits|mmef|mobi|mot-|moto|mwbp|nec-|newt|noki|palm|pana|pant|phil|play|port|prox|qwap|sage|sams|sany|sch-|sec-|send|seri|sgh-|shar|sie-|siem|smal|smar|sony|sph-|symb|t-mo|teli|tim-|tosh|tsm-|upg1|upsi|vk-v|voda|wap-|wapa|wapi|wapp|wapr|webc|winw|winw|xda\ |xda-).* [NC]
+RewriteCond %{HTTPS} !on
+RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/supercache/%{SERVER_NAME}/$1/index.html -f
+RewriteRule ^(.*) "/wp-content/cache/supercache/%{SERVER_NAME}/$1/index.html" [L]
+</IfModule>
+
+# END WPSuperCache
+
+
+# BEGIN EWWWIO
+
+# END EWWWIO
+
+
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+	RewriteCond %{HTTP_ACCEPT} image/webp
+	RewriteCond %{REQUEST_FILENAME} (.*)\.(jpe?g|png)$
+	# RewriteCond %{REQUEST_FILENAME}\.webp -f
+	RewriteCond %1\.webp -f
+	# RewriteCond %{QUERY_STRING} !type=original
+	RewriteRule (.+)\.(jpe?g|png)$ $1.webp [T=image/webp,E=accept:1]
+	# RewriteRule (.+)\.(jpe?g|png)$ %{REQUEST_FILENAME}.webp [T=image/webp,E=accept:1,L]
+</IfModule>
+<IfModule mod_headers.c>
+  Header append Vary Accept env=REDIRECT_accept
+</IfModule>
+AddType image/webp .webp

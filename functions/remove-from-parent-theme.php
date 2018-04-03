@@ -73,11 +73,13 @@ function typeofweb_featured_image() {
         $attachment_id = get_post_thumbnail_id( $post->ID );
 		$featured_image = wp_get_attachment_image_src( $attachment_id, 'verbosa-featured' );
 
-	} elseif ( $verbosas['verbosa_fpost'] && $verbosas['verbosa_fauto'] && empty( $featured_image ) ) {
-		// get the first image from post
-		$featured_image = cryout_post_first_image( $post->ID, 'verbosa-featured' );
-        $attachment_id = $featured_image['id'];
-	} else {
+    }
+    // elseif ( $verbosas['verbosa_fpost'] && $verbosas['verbosa_fauto'] && empty( $featured_image ) ) {
+	// 	// get the first image from post
+	// 	$featured_image = cryout_post_first_image( $post->ID, 'verbosa-featured' );
+    //     $attachment_id = $featured_image['id'];
+    // }
+    else {
 		// featured image not enabled or not obtainable
 		$featured_image = '';
 	};

@@ -17,6 +17,7 @@ require_once(__DIR__ . '/functions/add-verification-meta.php');
 require_once(__DIR__ . '/functions/remove-from-parent-theme.php');
 require_once(__DIR__ . '/functions/add-breadcrumbs.php');
 require_once(__DIR__ . '/functions/add-reading-progress.php');
+require_once(__DIR__ . '/functions/add-react-facebook-group-link.php');
 
 
 function async_scripts() {
