@@ -97,7 +97,6 @@ function typeofweb_featured_image() {
     <a class="responsive-featured-image"
         href="<?php echo esc_url( get_permalink( $post->ID ) ) ?>"
         title="<?php echo esc_attr( get_post_field( 'post_title', $post->ID ) ) ?>"
-        style="padding-bottom: calc(<?php echo $ratio ?>% - 11px)"
         >
         <?php echo apply_filters( 'bj_lazy_load_html', $img_str ); ?>
     </a>
