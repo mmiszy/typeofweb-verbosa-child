@@ -90,7 +90,7 @@ function typeofweb_featured_image() {
         $featured_image_h = $featured_image[2];
         $ratio = $featured_image_h / $featured_image_w * 100;
         
-        $img_str = '<img class="post-featured-image wp-image-' . $attachment_id . '" alt="' . the_title_attribute('echo=0') . '" ' . cryout_schema_microdata( 'url', 0 ) . ' src="' . $featured_image_url . '" />';
+        $img_str = '<img width="' . $featured_image_w . '" height="' . $featured_image_h . '" class="post-featured-image wp-image-' . $attachment_id . '" alt="' . the_title_attribute('echo=0') . '" ' . cryout_schema_microdata( 'url', 0 ) . ' src="' . $featured_image_url . '" />';
 
         ?>
 <div class="post-thumbnail-container" <?php cryout_schema_microdata( 'image' ); ?>>

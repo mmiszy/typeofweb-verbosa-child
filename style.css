@@ -788,8 +788,12 @@ table.job-offer {
     margin-left: -16%;
     margin-right: -16%;
     width: 132%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.post-thumbnail-container .responsive-featured-image {
+.verbosa-responsive-featured .main .post-thumbnail-container .responsive-featured-image {
     padding-bottom: 0 !important;
+    width: 100%;
 }
