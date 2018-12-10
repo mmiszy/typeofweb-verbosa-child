@@ -67,12 +67,17 @@ function typeofweb_featured_image() {
 	global $post;
     $verbosas = cryout_get_option( array('verbosa_fpost', 'verbosa_fauto', 'verbosa_falign') );
     $attachment_id = 0;
+    $is_new = $post->ID >= 1734;
 
 	if ( function_exists("has_post_thumbnail") && has_post_thumbnail() && $verbosas['verbosa_fpost']) {
         // has featured image
         $attachment_id = get_post_thumbnail_id( $post->ID );
-		$featured_image = wp_get_attachment_image_src( $attachment_id, 'verbosa-featured' );
 
+        if ($is_new) {
+            $featured_image = wp_get_attachment_image_src( $attachment_id, 'post-thumbnail' );
+        } else {
+            $featured_image = wp_get_attachment_image_src( $attachment_id, 'verbosa-featured' );
+        }        
     }
     // elseif ( $verbosas['verbosa_fpost'] && $verbosas['verbosa_fauto'] && empty( $featured_image ) ) {
 	// 	// get the first image from post
@@ -93,7 +98,7 @@ function typeofweb_featured_image() {
         $img_str = '<img width="' . $featured_image_w . '" height="' . $featured_image_h . '" class="post-featured-image wp-image-' . $attachment_id . '" alt="' . the_title_attribute('echo=0') . '" ' . cryout_schema_microdata( 'url', 0 ) . ' src="' . $featured_image_url . '" />';
 
         ?>
-<div class="post-thumbnail-container" <?php cryout_schema_microdata( 'image' ); ?>>
+<div class="post-thumbnail-container <?php echo $is_new ? 'is-new' : '' ?>" <?php cryout_schema_microdata( 'image' ); ?>>
     <a class="responsive-featured-image"
         href="<?php echo esc_url( get_permalink( $post->ID ) ) ?>"
         title="<?php echo esc_attr( get_post_field( 'post_title', $post->ID ) ) ?>"
