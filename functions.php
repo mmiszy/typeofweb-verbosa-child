@@ -17,8 +17,10 @@ require_once(__DIR__ . '/functions/add-verification-meta.php');
 require_once(__DIR__ . '/functions/remove-from-parent-theme.php');
 require_once(__DIR__ . '/functions/add-breadcrumbs.php');
 require_once(__DIR__ . '/functions/add-reading-progress.php');
-require_once(__DIR__ . '/functions/add-react-facebook-group-link.php');
+// require_once(__DIR__ . '/functions/add-react-facebook-group-link.php');
+require_once(__DIR__ . '/functions/add-discord-link.php');
 require_once(__DIR__ . '/functions/add-custom-head-tags.php');
+require_once(__DIR__ . '/functions/add-courses-shortcode.php');
 
 
 function async_scripts() {

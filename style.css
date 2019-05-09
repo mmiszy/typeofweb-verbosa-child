@@ -480,7 +480,7 @@ nav#mobile-menu ul li {
 
 
 body:not(.home) .content-widget-before {
-    display: none;
+    /* display: none; */
 }
 
 .inner-post-mailchimp-container {
@@ -691,10 +691,28 @@ table.job-offer {
     text-indent: 1ex;
 }
 
+.courses-header {
+    display: block;
+    font-size: 200%;
+    font-weight: 800;
+    line-height: 1.5 !important;
+    text-align: center;
+    padding: 10px 0 15px 0;
+    /* background: #f4f4f4; */
+    border: 1px solid black;
 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.courses-header img {
+    margin-top: 20px;
+}
 
-
-
+.courses-header a {
+    text-decoration: underline;
+}
 
 
 /* header */
