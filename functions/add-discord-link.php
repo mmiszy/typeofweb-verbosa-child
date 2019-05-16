@@ -1,14 +1,27 @@
 <?php
 
 function typeofweb_add_react_facebook_group_link() {
-    // if (is_tax('series', 'react-js') || has_term('react-js', 'series')) {
-      ?>
+  $series = NULL;
+  if (is_single()) {
+    global $post;
+    $series = get_the_terms($post->ID, 'series')[0]->name;
+  } else if (is_tax('series')) {
+    $term = get_term_by('slug', get_query_var( 'term' ), get_query_var('taxonomy')); 
+    $series = $term->name;
+  }
+?>
 
 <aside class="content-widget content-widget-before" itemscope="" itemtype="http://schema.org/WPSideBar">
   <section id="text-6" class="widget-container widget_text">
     <div class="textwidget">
       <p style="font-size: 1.8em; text-indent: 0; text-align: center; margin: 0;">
-        <?php echo do_shortcode('[typeofweb-courses-slogan]'); ?>
+        <?php
+          if ($series) {
+            echo do_shortcode('[typeofweb-courses-slogan category="' . $series . '"]');
+          } else {
+            echo do_shortcode('[typeofweb-courses-slogan]');
+          }
+        ?>
       </p>
     </div>
   </section>
