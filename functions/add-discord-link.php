@@ -17,7 +17,7 @@ function typeofweb_add_react_facebook_group_link() {
       <p style="font-size: 1.8em; text-indent: 0; text-align: center; margin: 0;">
         <?php
           if (is_front_page()) {
-            echo '<a style="font-weight: 900" href="https://typeofweb.com/szkolenia/" target="_blank">Sprawdź szkolenia z Type of Web!</a>';
+            echo '<a style="font-weight: 900" href="https://typeofweb.com/szkolenia?utm_source=https%3A%2F%2Ftypeofweb.com%2F&utm_medium=front_page" target="_blank">Sprawdź szkolenia z Type of Web!</a>';
           } else if ($series) {
             echo do_shortcode('[typeofweb-courses-slogan category="' . $series . '"]');
           } else {

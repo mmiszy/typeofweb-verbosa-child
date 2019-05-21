@@ -55,7 +55,7 @@ function typeofweb_courses_slogan_shortcode($atts) {
     $tech = $atts['category'] ?? $technologies[$techIndex];
     $slogan = $slogans[$sloganIndex];
 
-    return '<a style="font-weight: 900" href="https://typeofweb.com/szkolenia/" target="_blank">' . sprintf($slogan, $tech) . '</a>';
+    return '<a style="font-weight: 900" href="https://typeofweb.com/szkolenia?utm_source=https%3A%2F%2Ftypeofweb.com%2F&utm_medium=courses_slogan" target="_blank">' . sprintf($slogan, $tech) . '</a>';
 }
 
 add_shortcode( 'typeofweb-courses-slogan', 'typeofweb_courses_slogan_shortcode' );
