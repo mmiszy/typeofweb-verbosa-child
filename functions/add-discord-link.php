@@ -9,6 +9,10 @@ function typeofweb_add_react_facebook_group_link() {
     $term = get_term_by('slug', get_query_var( 'term' ), get_query_var('taxonomy')); 
     $series = $term->name;
   }
+
+  if ($series && $series === 'Piece of cake') {
+    $series = NULL;
+  }
 ?>
 
 <aside class="content-widget content-widget-before" itemscope="" itemtype="http://schema.org/WPSideBar">
