@@ -24,7 +24,7 @@ require_once(__DIR__ . '/functions/add-courses-shortcode.php');
 
 
 function async_scripts() {
-	return 'defer ';
+    return 'defer ';
 }
 add_filter('autoptimize_filter_js_defer', 'async_scripts');
 

@@ -27,10 +27,24 @@ function typeofweb_add_mailchimp_shortcode($atts) {
     return '
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup">
-    <form action="//typeofweb.us16.list-manage.com/subscribe/post?u=8073e459fa97c5444592f393a&amp;id=9c6a75a636" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
+    <form action="https://typeofweb.us16.list-manage.com/subscribe/post?u=8073e459fa97c5444592f393a&amp;id=9c6a75a636" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
         <div id="mc_embed_signup_scroll">
-            <label for="mce-EMAIL">' . esc_html($atts['title']) . '</label>
-            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Podaj adres email" required oninvalid="this.setCustomValidity(\'Wprowadź adres email\')" oninput="setCustomValidity(\'\'); checkValidity();">
+            <div class="mc-field-group">
+                <label for="mce-EMAIL">' . esc_html($atts['title']) . '</label>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Podaj adres email" required oninvalid="this.setCustomValidity(\'Wprowadź adres email\')" oninput="setCustomValidity(\'\'); checkValidity();">
+            </div>
+            <div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
+                <div class="content__gdpr">
+                    <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
+                        <label class="checkbox subfield" for="gdpr_27543">
+                            <input type="checkbox" id="gdpr_27543" name="gdpr[27543]" value="Y" class="av-checkbox gdpr" required oninvalid="this.setCustomValidity(\'RODO wymaga, żeby to było zaznaczone.\')" onchange="setCustomValidity(\'\'); checkValidity();">
+                            <span>Rozumiem i akceptuję Regulamin Newslettera oraz Politykę Prywatności. Wyrażam zgodę na otrzymywanie na podany adres e-mail informacji handlowych w rozumieniu ustawy z&nbsp;dnia 18 lipca 2002&nbsp;r. o&nbsp;świadczeniu usług drogą elektroniczną.</span>
+                        </label>
+                    </fieldset>
+                    <p class="no-spam-promise">Nie wysyłamy spamu, tylko wartościowe informacje. W&nbsp;każdej chwili możesz się wypisać klikajac „unsubscribe” w stopce maila.</p>
+                </div>
+            </div>
+            
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8073e459fa97c5444592f393a_9c6a75a636" tabindex="-1" value=""></div>
             <div class="clear"><input type="submit" value="Zapisz się" name="subscribe" id="mc-embedded-subscribe" class="button"></div>

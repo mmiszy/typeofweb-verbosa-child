@@ -496,9 +496,39 @@ body:not(.home) .content-widget-before {
 
 #mc_embed_signup label {
     display: block;
-    font-size: 200%;
+    font-size: 170%;
     font-weight: 800;
     line-height: 1.5;
+}
+
+#mc_embed_signup .content__gdpr label, #mc_embed_signup .content__gdpr p, #mc_embed_signup .content__gdpr .gdprRequired {
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+#mc_embed_signup .content__gdpr {
+    text-align: left;
+}
+#mc_embed_signup .checkbox.subfield {
+    display: flex;
+    padding: 5px 0 5px 0;
+    align-items: center;
+}
+#mc_embed_signup .av-checkbox {
+    width: 25px;
+    height: 25px;
+    flex: 0 0 25px;
+    margin: -2px 5px 0 0;
+}
+#mc_embed_signup .content__gdpr .no-spam-promise {
+    max-width: 500px;
+    margin: 0 auto 5px auto;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
 }
 
 #mc_embed_signup .button {
