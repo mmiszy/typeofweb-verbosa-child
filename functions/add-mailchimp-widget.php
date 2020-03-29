@@ -38,10 +38,12 @@ function typeofweb_add_mailchimp_shortcode($atts) {
                     <fieldset class="mc_fieldset gdprRequired mc-field-group" name="interestgroup_field">
                         <label class="checkbox subfield" for="gdpr_27543">
                             <input type="checkbox" id="gdpr_27543" name="gdpr[27543]" value="Y" class="av-checkbox gdpr" required oninvalid="this.setCustomValidity(\'RODO wymaga, żeby to było zaznaczone.\')" onchange="setCustomValidity(\'\'); checkValidity();">
-                            <span>Rozumiem i akceptuję Regulamin Newslettera oraz Politykę Prywatności. Wyrażam zgodę na otrzymywanie na podany adres e-mail informacji handlowych w rozumieniu ustawy z&nbsp;dnia 18 lipca 2002&nbsp;r. o&nbsp;świadczeniu usług drogą elektroniczną.</span>
+                            <span>
+                            Rozumiem i akceptuję <a href="https://typeofweb.com/regulamin/">Regulamin Newslettera</a> oraz <a href="https://typeofweb.com/polityka-prywatnosci/">Politykę Prywatności</a>.
+                            Wyrażam zgodę na otrzymywanie na podany adres e-mail informacji handlowych w rozumieniu ustawy z&nbsp;dnia 18 lipca 2002&nbsp;r. o&nbsp;świadczeniu usług drogą elektroniczną.</span>
                         </label>
                     </fieldset>
-                    <p class="no-spam-promise">Nie wysyłamy spamu, tylko wartościowe informacje. W&nbsp;każdej chwili możesz się wypisać klikajac „unsubscribe” w stopce maila.</p>
+                    <p class="no-spam-promise">Nie wysyłamy spamu, tylko wartościowe informacje. W&nbsp;każdej chwili możesz się wypisać klikając „wypisz się” w stopce maila.</p>
                 </div>
             </div>
             
